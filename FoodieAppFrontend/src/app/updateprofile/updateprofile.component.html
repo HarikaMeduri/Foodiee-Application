@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="card" style="padding: 20px;" >
+                <div class="text-center">                
+                <h1>Update Profile</h1>
+                </div>
+
+                <form [formGroup]="RegForm" (ngSubmit)="saveData()">
+                    <div class="form-group">
+                        <label for="username" class="form-label">Username: </label>
+                        <input type="text" id="username" formControlName="username" class="form-control" required>
+
+                        <div *ngIf="username?.errors?.['required'] && (username?.dirty || username?.touched)"
+                            class="val alert alert-danger" required>
+                            username is required!
+                        </div>
+                    </div><br><br>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Id: </label>
+                        <input type="text" id="email" formControlName="email" class="form-control" required>
+
+                        <div *ngIf="email?.errors?.['required'] && (email?.dirty || email?.touched)"
+                            class="val alert alert-danger" required>
+                            Email is required!
+                        </div>
+                        <!-- <div *ngif="emailid.get('emailid').errors?.pattern" class="val alert alert-danger" required>
+                    Email is invalid!
+                   </div>  -->
+                    </div><br><br>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password: </label>
+                        <input type="password" id="password" formControlName="password" class="form-control" required>
+                        <div *ngIf="password?.errors?.['required'] && (password?.dirty || password?.touched)"
+                            class=" val1 alert alert-danger">
+                            Password is required!
+                        </div>
+                        <!-- <div *ngIf="password?.errors?.['minlength']" class="alert alert-danger">
+                Password Should have Minimum 8 characters
+            </div> -->
+                    </div><br><br>
+                    <div class="form-group">
+                        <label for="phonenumber" class="form-label">Phone Number: </label>
+                        <input type="number" id="phonenumber" formControlName="phonenumber" class="form-control"
+                            placeholder="Mobile Number" required>
+
+
+                        <div *ngIf="phonenumber?.errors?.['required'] && (phonenumber?.dirty || phonenumber?.touched)"
+                            class=" val2 alert alert-danger">
+                            Mobile Number is required!
+                        </div>
+                    </div><br><br>
+                   
+
+                    <div>&nbsp;&nbsp;&nbsp;
+                        <button>Update</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!-- <button mat-stroked-button color="accent" class="logbut" routerLink="/login">Login</button> -->
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            <!-- [disabled]="RegForm.invalid" -->

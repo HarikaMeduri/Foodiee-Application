@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d3ee954-3567-4a7a-b2d5-e1d4321b7fb5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/com/niit/ApiGateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/test/java/com/niit/ApiGateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/AuthenticationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/config/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/config/MessageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/domain/Userdetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/exception/UserAlreadyExistExpection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/filter/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/service/JwtSecurityTokenGeneratorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/service/SecurityTokenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/AuthenticationService/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/java/com/niit/rabbitmq/domain/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthenticationService/src/test/java/com/niit/AuthenticationService/AuthenticationServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/src/main/java/com/niit/EurekaServer/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/src/test/java/com/niit/EurekaServer/EurekaServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/RestaurantServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/config/MessageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/config/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/controller/RestaurantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/domain/DatabaseSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/domain/Foods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/domain/ImageModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/domain/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/exception/FoodNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/exception/RestaurantAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/exception/RestaurantNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/repository/FoodRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/repository/RestaurantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/service/RestaurantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/RestaurantService/service/RestaurantServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/java/com/niit/rabbitmq/domain/RestaurantDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestaurantService/src/test/java/com/niit/RestaurantService/RestaurantServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/UserdataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/config/MessageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/config/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/CartSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/CustomOrderStringDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/CustomStringDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/DbSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/domain/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/exception/CartisEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/exception/EmailAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/exception/EmailNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/filter/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/Userdata/service/CustomerServiceImpli.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/java/com/niit/rabbitmq/domain/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Userdata/src/test/java/com/niit/Userdata/UserdataApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IDBpssjcJ4D9Ekcp55GoxcneDJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PRASANNA/Desktop/Foodie_App/Foodie_App&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.UserdataApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.ApiGateway.ApiGatewayApplication" />
+      <module name="ApiGateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.ApiGateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.AuthenticationService.AuthenticationServiceApplication" />
+      <module name="AuthenticationService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.AuthenticationService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.EurekaServer.EurekaServerApplication" />
+      <module name="EurekaServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.EurekaServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.RestaurantService.RestaurantServiceApplication" />
+      <module name="RestaurantService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.RestaurantService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserdataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.Userdata.UserdataApplication" />
+      <module name="Userdata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.Userdata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserdataApplication" />
+        <item itemvalue="Application.RestaurantServiceApplication" />
+        <item itemvalue="Application.AuthenticationServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d3ee954-3567-4a7a-b2d5-e1d4321b7fb5" name="Changes" comment="" />
+      <created>1669706462468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669706462468</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

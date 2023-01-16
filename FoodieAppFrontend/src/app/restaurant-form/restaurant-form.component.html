@@ -1,0 +1,130 @@
+<!-- <mat-toolbar>
+    <button mat-raised-button color="primary">Home</button>
+</mat-toolbar> -->
+
+<!-- <div>
+    <button (click)="updateStatus()">Status</button>
+</div> -->
+
+<div class="container mt-1">
+    <div class="card p-2">
+        <div class="row">
+
+            <div class="col-6">
+
+                <form #restaurantForm="ngForm" (ngSubmit)="addRestaurant(restaurantForm)">
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your Restaurants Name</mat-label>
+                        <input matInput [(ngModel)]="restaurant.restaurantname" 
+                            name="restaurantname" 
+                            #restaurantname="ngModel" 
+                            minlength="4"
+                            required 
+                            placeholder="Restaurant Name" >
+                            <mat-error *ngIf="restaurantname.invalid && restaurantname.touched && restaurantname.errors?.['required']">
+                                Please Enter Valid Name
+                            </mat-error>
+                            <!-- <mat-error *ngIf="restaurantname.invalid || restaurantname.touched && restaurantname.errors?.['minlength']">
+                                Minimum of 4 characters required
+                            </mat-error> -->
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your Restaurants Phone Number</mat-label>
+                        <input matInput [(ngModel)]="restaurant.phonenumber" name="phonenumber" #phonenumber="ngModel" required
+                            placeholder="Phone Number">
+                            <mat-error *ngIf="phonenumber.invalid && phonenumber.touched && phonenumber.errors?.['required']">
+                                Please Enter Valid Phone Number
+                            </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your User Email</mat-label>
+                        <input matInput [(ngModel)]="restaurant.email" name="email" placeholder="Email" #email="ngModel" required>
+                        <mat-error *ngIf="email.invalid && email.touched && email.errors?.['required']">
+                            Please Enter Valid Email Id
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your Building Number</mat-label>
+                        <input matInput [(ngModel)]="restaurant.buildingnumber" name="buildingnumber" #buildingnumber="ngModel" required
+                            placeholder="Building Number">
+                            <mat-error *ngIf="buildingnumber.invalid && buildingnumber.touched && buildingnumber.errors?.['required']">
+                                Please Enter Valid Building Number
+                            </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your Street Name</mat-label>
+                        <input matInput [(ngModel)]="restaurant.street" name="street" #street="ngModel" required placeholder="Street Name">
+                        <mat-error *ngIf="street.invalid && street.touched && street.errors?.['required']">
+                            Please Enter Valid Street Name
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your City Name</mat-label>
+                        <input matInput [(ngModel)]="restaurant.city" name="city" #city="ngModel" required placeholder="City Name">
+                        <mat-error *ngIf="city.invalid && city.touched && city.errors?.['required']">
+                            Please Enter Valid City name
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your City Pincode</mat-label>
+                        <input matInput [(ngModel)]="restaurant.pincode" name="pincode" #pincode="ngModel" required placeholder="Pincode">
+                        <mat-error *ngIf="pincode.invalid && pincode.touched && pincode.errors?.['required']">
+                            Please Enter Valid Pincode
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your State Name</mat-label>
+                        <input matInput [(ngModel)]="restaurant.state" name="state" #state="ngModel" required placeholder="State Name">
+                        <mat-error *ngIf="state.invalid && state.touched && state.errors?.['required']">
+                            Please Enter Valid State Name
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your Country Name</mat-label>
+                        <input matInput [(ngModel)]="restaurant.country" name="country" #country="ngModel" required placeholder="Country Name">
+                        <mat-error *ngIf="country.invalid && country.touched && country.errors?.['required']">
+                            Please Enter Valid Country Name
+                        </mat-error>
+                    </mat-form-field>
+
+                    <div align="end">
+                        <button routerLink="/" mat-stroked-button color="primary" style="margin-right: 3px;">Back</button>
+                        <button [disabled]="restaurantForm.invalid" type="submit" mat-stroked-button color="primary" style="margin-right: 3px;">Add
+                            Restaurant</button>
+                        <!-- <button (click)="restaurantForm.reset()" mat-stroked-button color="primary">Clear</button> -->
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col-6">
+                <div>
+                    <input type="file" value="select" #selectFile (change)="onFileSelected($event)">
+                </div>
+                <div class="mt-5">
+                    <div class="row">
+                        <mat-grid-list cols="1" rowHeight="2:1">
+                            <mat-grid-tile *ngFor="let file of restaurant.restaurantimage; let i = index">
+                                <div style="position: relative">
+                                    <span class="btn-remove-image" (click)="removeImage(i)">X</span>
+                                    <img [src]="file.url" width="250px" height="250px" alt="">
+                                </div>
+                            </mat-grid-tile>
+                        </mat-grid-list>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

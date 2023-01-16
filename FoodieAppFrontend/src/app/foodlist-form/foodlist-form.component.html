@@ -1,0 +1,136 @@
+<mat-toolbar color="info">
+    <div>
+        <img src="assets\images\foodpng.png" alt="Responsive image" style="width: 150px; height: 100px"/>
+    </div>
+    <span class="example-spacer" style="margin-right: 925px"></span>
+    <a
+        class="links"
+        mat-list-item
+        class="btn btn-danger rounded-pill"
+        routerLink="/foodlistform"
+        >Add Foods</a>
+    <span style="margin-right: 25px"></span>
+    <a
+        class="links"
+        mat-list-item
+        class="btn btn-danger rounded-pill"
+        (click)="doLogout()"
+        >Logout</a>
+</mat-toolbar>
+
+
+<div class="container mt-2">
+    <div class="card p-2">
+        <div class="row">
+
+            <div class="col-6">
+
+                <form #foodsForm="ngForm" (ngSubmit)="updateFoodlist(foodsForm)">
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Your Food Name</mat-label>
+                        <input matInput [(ngModel)]="foods.foodname" name="foodname" placeholder="Food Name"
+                        #foodname="ngModel" 
+                            minlength="4"
+                            required >
+                        <mat-error *ngIf="foodname.invalid || foodname.touched && foodname.errors?.['required']">
+                            Please Enter Valid Name
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Food Price</mat-label>
+                        <input matInput [(ngModel)]="foods.price" name="price" placeholder="Food Price"
+                            #price="ngModel" 
+                            minlength="2"
+                            required 
+                        >
+                        <mat-error *ngIf="price.invalid || price.touched && price.errors?.['required']">
+                            Please Enter Valid Price
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Discounted Price</mat-label>
+                        <input matInput [(ngModel)]="foods.discountprice" name="discountprice"
+                            placeholder="Discount Price"
+                            #discountprice="ngModel" 
+                            minlength="2"
+                            required >
+                            <mat-error *ngIf="discountprice.invalid || discountprice.touched && discountprice.errors?.['required']">
+                                Please Enter Valid Price
+                            </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Food Category Name</mat-label>
+                        <input matInput [(ngModel)]="foods.categoryname" name="categoryname"
+                            placeholder="Category Name"
+                            #categoryname="ngModel" 
+                            minlength="3"
+                            required >
+                            <mat-error *ngIf="categoryname.invalid || categoryname.touched && categoryname.errors?.['required']">
+                                Please Mention Category Of Food
+                            </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Food Sub-Category Name</mat-label>
+                        <input matInput [(ngModel)]="foods.subcategoryname" name="subcategoryname"
+                            placeholder="Sub-Category Name"
+                            #subcategoryname="ngModel" 
+                            minlength="4"
+                            required>
+                            <mat-error *ngIf="subcategoryname.invalid || subcategoryname.touched && subcategoryname.errors?.['required']">
+                                Please Mention Sub-Category Of Food
+                            </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Enter Something About Food</mat-label>
+                        <input matInput [(ngModel)]="foods.description" name="description"
+                            placeholder="Food Description"
+                            #description="ngModel" 
+                            minlength="4"
+                            maxlength="100"
+                            required>
+                            <mat-error *ngIf="description.invalid || 
+                            description.touched && 
+                            description.errors?.['required'] &&
+                            description.errors?.['maxlength']">
+                                Give proper description in less than 50 characters.
+                            </mat-error>
+                    </mat-form-field>
+
+                    <div align="end">
+                        <button mat-stroked-button color="primary" style="margin-right: 3px;">Back</button>
+                        <button type="submit" [disabled]="foodsForm.invalid" mat-stroked-button color="primary" style="margin-right: 3px;">Add
+                            Food</button>
+                        <!-- <button mat-stroked-button color="primary">Clear</button> -->
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col-6">
+                <div>
+                    <input type="file" value="select" #selectFile (change)="onFileSelected($event)">
+                </div>
+                <div class="mt-5">
+                    <div class="row">
+                        <mat-grid-list cols="1" rowHeight="2:1">
+                            <mat-grid-tile *ngFor="let file of foods.foodimage; let i = index">
+                                <div style="position: relative">
+                                    <span class="btn-remove-image" (click)="removeImage(i)">X</span>
+                                    <img [src]="file.url" width="250px" height="250px" alt="">
+                                </div>
+                            </mat-grid-tile>
+                        </mat-grid-list>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<mat-toolbar color="info">
+  <!-- <button mat-icon-button >
+      <mat-icon (click)="sidenav.toggle();">menu</mat-icon>        
+    </button> -->
+  <div>
+    <!-- <img src="assets\images\foodiesif.gif" class="img-fluid" alt="Responsive image" style="width: 150px; height: 100px"> -->
+    <img
+      src="assets\images\foodpng.png"
+      class="img-fluid"
+      alt="Responsive image"
+      style="width: 150px; height: 100px" routerLink="/usernavdashboard/userdashboard"
+    />
+  </div>
+  <span class="example-spacer" style="margin-right: 800px"></span>
+
+  <button routerLink="/usernavdashboard/cart" class="btn btn-primary">
+    <i class="fa fa-shopping-cart" style="font-size: 20px"></i></button
+  ><span style="margin-right: 50px"></span>
+  <a
+    class="links"
+    mat-list-item
+    class="btn btn-danger rounded-pill"
+    routerLink="/usernavdashboard/restaurantform"
+    >Add restaurant</a
+  >
+  <span style="margin-right: 50px"></span>
+
+  <a
+    class="links"
+    mat-list-item
+    class="btn btn-danger rounded-pill"
+    (click)="logout()"
+    >Logout</a
+  >
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <div style="height: 100vh">
+      <br />
+     
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

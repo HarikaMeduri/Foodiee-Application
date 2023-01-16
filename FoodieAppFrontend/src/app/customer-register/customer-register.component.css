@@ -1,0 +1,21 @@
+.container{
+    background-image: url('/Foodies/src/assets/images/wallpaper.jpg');
+    /* D:\NIIT\Main Project\FoodiesFrontEnd\Foodies\src\assets\images\wallpaper.jpg
+    Foodies\src\assets\images\wallpaper.jpg */
+}
+
+.card{
+    margin-top: -550px;
+    border:none;
+    width:500px;
+    padding:40px;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,50%);
+    background: rgb(148, 187, 215);
+    background: linear-gradient(90deg,rgb(121, 134, 143)0%,rgb(136, 111, 185)100%);
+}
+
+.card label,h1{
+    color:#fff;
+}

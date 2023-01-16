@@ -1,0 +1,26 @@
+<p>view-restaurant works!</p>
+
+<div class="container mt-3">
+    <mat-grid-list cols="4" rowHeight="3:5" gutterSize="10">
+        <mat-grid-tile *ngFor="let x of restaurantDetails">
+            <div class="row dashboard-restaurant-image">
+                <img [src]="x.restaurantimage[0].url" alt="" width="150px" height="150px">
+                <div class="mt-3">
+                    <p><b>Name: {{x.restaurantname}}</b></p>
+                </div>
+                <div class="mt-1">
+                    <p><b>Contact: </b>{{x.phonenumber}}</p>
+                </div>
+                <div class="mt-1">
+                    <p><b>Address: </b></p>
+                    <p>&nbsp; &nbsp;B.No: {{x.buildingnumber}}</p>
+                    <p>&nbsp; &nbsp;Street: {{x.street}}</p>
+                    <p>&nbsp; &nbsp;City: {{x.city}}</p>
+                </div>
+                <div class="mt-1">
+                    <button type="button" mat-raised-button color="warn">VIEW</button>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

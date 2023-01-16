@@ -1,2 +1,3 @@
-# Foodiee-Application
-Foodiee App(Final Project)
+# Capstone Project
+
+Foodie App

@@ -1,0 +1,105 @@
+.example-card {
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .example-header-image {
+    background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+    background-size: cover;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: none;
+    outline: none;
+    margin-top:-200px;
+    margin-bottom: 1em;
+    padding: 20px;
+
+  }
+
+  mat-grid-tile {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.button {
+    flex-wrap: wrap;
+}
+
+.logoutbtn {
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 100px;
+}
+
+.cartbtn {
+    margin-top: 20px;
+    margin-left: 400px;
+    /* margin-right: 50px; */
+    padding: 10px;
+    width: 100px;
+}
+
+.margin {
+    margin: 10px;
+}
+
+.backbtn {
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 100px;
+}
+
+
+.container1{
+  margin-top: -500px;
+}
+/* p,mat-card-actions{
+  text-align: center;
+  font-size: large;
+  font-style: italic;
+  padding: 5px;
+  
+} */
+/* b{
+  font-style: italic;
+  
+} */
+.prce{
+  text-decoration:line-through;
+  color:red;
+}
+
+.imagecontainer{
+  text-align: center;
+}
+
+.box{
+  outline: auto;
+  border-radius: 50px;
+  padding: 10px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+.dashboard-restaurant-image {
+  max-width: 90%;
+  max-height: 90%;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto, */
+  margin-left: auto;
+  margin-right: auto;
+}

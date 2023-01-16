@@ -1,0 +1,50 @@
+<mat-toolbar color="info">
+  <button mat-icon-button>
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  </button>
+  <!-- <span style="margin-left: 10px;" routerLink="/">Foodies</span> -->
+  <div>
+    <!-- <img src="assets\images\foodiesif.gif" class="img-fluid" alt="Responsive image" style="width: 150px; height: 100px"> -->
+    <img
+      src="assets\images\foodpng.png"
+      class="img-fluid"
+      alt="Responsive image"
+      style="width: 150px; height: 100px"
+    />
+  </div>
+  <span class="example-spacer" style="margin-right: 1000px"></span>
+  <!-- <span style="margin-right: 400px;">ViewTube</span> -->
+  <div>
+    <!-- <a class="links" mat-list-item class="btn btn-primary rounded-pill" routerLink="/restaurantform">Add Restaurant</a><span style="margin-right: 50px;"></span> -->
+    <a
+      class="links"
+      mat-list-item
+      class="btn btn-danger rounded-pill"
+      routerLink="/register"
+      >Signup</a
+    ><span style="margin-right: 50px"></span>
+    <a
+      class="links"
+      mat-list-item
+      class="btn btn-primary rounded-pill"
+      routerLink="/login"
+      >Login</a
+    >
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav opened="false" mode="side" width="500px">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/">Dashboard</a>
+      <a mat-list-item routerLink="/register">Signup</a>
+      <a mat-list-item routerLink="/login">Login</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 100vh">
+      <br />
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
